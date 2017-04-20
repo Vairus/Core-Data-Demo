@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Core_Data_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your username and password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zW-8k-JV3">
+                                <rect key="frame" x="25" y="109" width="325" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Mbn-Ph-vNK"/>
+                                    <constraint firstAttribute="width" constant="325" id="ixN-zd-6x3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Vfo-6G-oIs">
+                                <rect key="frame" x="114.5" y="160" width="146" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dkb-HZ-hzr"/>
+                                    <constraint firstAttribute="width" constant="146" id="pa0-Ch-z4N"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zME-ES-r3j">
+                                <rect key="frame" x="114" y="200" width="146" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="EE3-2P-4YH"/>
+                                    <constraint firstAttribute="height" constant="30" id="tcd-jY-G4M"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPE-dt-YPe">
+                                <rect key="frame" x="158" y="245" width="58" height="30"/>
+                                <color key="backgroundColor" red="0.3803921569" green="0.77647058820000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9W5-oR-psS"/>
+                                    <constraint firstAttribute="width" constant="58" id="zIK-5w-bPd"/>
+                                </constraints>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="auth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l8N-Bi-Vgh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuA-Oj-kbH">
+                                <rect key="frame" x="124" y="308" width="127" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6zW-8k-JV3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="97A-ER-B6U"/>
+                            <constraint firstItem="Vfo-6G-oIs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HHp-Jm-LXS"/>
+                            <constraint firstItem="6zW-8k-JV3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="89" id="LJd-GK-ewE"/>
+                            <constraint firstItem="Vfo-6G-oIs" firstAttribute="top" secondItem="6zW-8k-JV3" secondAttribute="bottom" constant="30" id="Q8y-ZB-hMs"/>
+                            <constraint firstItem="VPE-dt-YPe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bPQ-VG-4pW"/>
+                            <constraint firstItem="zME-ES-r3j" firstAttribute="top" secondItem="Vfo-6G-oIs" secondAttribute="bottom" constant="10" id="jaE-NW-rOz"/>
+                            <constraint firstItem="zME-ES-r3j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ppE-5p-BgC"/>
+                            <constraint firstItem="VPE-dt-YPe" firstAttribute="top" secondItem="zME-ES-r3j" secondAttribute="bottom" constant="15" id="sEU-eU-cIq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answer" destination="uuA-Oj-kbH" id="Yfm-gd-QON"/>
+                        <outlet property="pswd" destination="zME-ES-r3j" id="S3j-Th-xya"/>
+                        <outlet property="user" destination="Vfo-6G-oIs" id="PMJ-lr-jhS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
